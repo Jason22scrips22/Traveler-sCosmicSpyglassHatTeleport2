@@ -1,0 +1,11 @@
+Section:CreateButton("Teleport 11", function()
+    local player = game.Players.LocalPlayer
+    local character = player.Character
+    if character then
+        local humanoidRootPart = character:FindFirstChild("HumanoidRootPart")
+        if humanoidRootPart then
+            humanoidRootPart.CFrame = CFrame.new(-98.01229095458984, 80.52295684814453, -430.8851013183594)
+        end
+    end
+    print("Clicked")
+end)
